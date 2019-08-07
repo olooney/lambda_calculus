@@ -1,4 +1,5 @@
-from .parser import parse
+from .parser import parse, variable_names
+from .ast import Variable
 
 expr = parse(str(parse('((λ x. (x x)) (λ f. (Lambda x. ((Lx.x) x)) ))')))
 print(expr)

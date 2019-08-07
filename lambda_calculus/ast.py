@@ -1,6 +1,8 @@
 import re
 from copy import copy
 
+from string import ascii_lowercase as variable_names
+
 # Abstract Base Class for parse tree nodes
 class Node:
     def beta_reduction(self):

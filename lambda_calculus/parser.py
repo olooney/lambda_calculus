@@ -2,7 +2,7 @@ import re
 import itertools
 from string import ascii_lowercase as variable_names
 
-from ast import Node, Abstraction, Application, Variable, Macro
+from .ast import Node, Abstraction, Application, Variable, Macro
 
 lambda_calculus_tokens = re.compile(r'\(|\)|\.|Lambda|L|λ|[A-Z]+|[a-z][a-z0-9_]*')
 
